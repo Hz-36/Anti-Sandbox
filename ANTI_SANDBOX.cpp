@@ -650,7 +650,7 @@ bool xCheckSandboxFiles(const WCHAR* yBlacklistedFilePath) {
     return (blacklistedSize != kernel32Size);
 }
 
-bool xCheckFiles() {
+bool xCheckFiles() {  // Check for Blacklisted Sandbox Files
     const WCHAR* filePaths[] = {
         L"C:\\take_screenshot.ps1",
         L"C:\\analysis",
